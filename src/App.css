@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
+
 .App {
   text-align: center;
 }
@@ -14,14 +16,16 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color:#181836;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
 }
 
 .App-link {
@@ -35,4 +39,53 @@
   to {
     transform: rotate(360deg);
   }
+}
+.formPanel{
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #505083;
+  backdrop-filter: blur(2px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 0px 3px 3px 3px;
+
+}
+
+
+p {
+  word-break: break-all;
+  white-space: normal;
+}
+
+.PrivateSwitchBase-input, .css-1m9pwf3, .css-1e6ud36-MuiButtonBase-root-MuiCheckbox-root{
+  padding:  0!important;
+  padding-left: 12px !important;
+}
+
+.sml{
+font-size: 0.7rem;
+}
+ul, li{
+  font-weight: 100;
+}
+li{
+  margin-bottom: 11px;
+}
+
+h3{
+  font-size: 1rem;
+}
+
+h4{
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.icon-button-file > span, .css-jcwuwq-MuiButtonBase-root-MuiButton-root{
+  padding: 0 !important;
+  background-color: #505083 !important;
+  box-shadow: none !important;
+}
+
+.MuiIconButton-root{
+  padding: 6px !important;
 }

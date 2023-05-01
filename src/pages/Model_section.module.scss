@@ -1,0 +1,882 @@
+@use "utils" as *;
+
+$color_type_0: rgb(116, 116, 184);
+$color_type_1: rgb(147, 147, 218);
+$color_type_2: rgb(168, 176, 200);
+$color_type_3: rgb(242, 244, 249);
+$color_type_4: rgb(255, 255, 255);
+$color_type_5: rgb(40, 40, 69);
+$color_type_6: rgb(80, 80, 131);
+$color_type_7: rgba(255, 255, 255, 0.047);
+$color_type_8: rgba(255, 255, 255, 0.098);
+
+$border_radius_type_0: 10px 10px 10px 10px;
+$border_radius_type_1: 16px 16px 16px 16px;
+$border_radius_type_2: 1px;
+$border_radius_type_3: 2.9700000286102295px 2.9700000286102295px 2.9700000286102295px 2.9700000286102295px;
+$border_radius_type_4: 3.5px 3.5px 0px 0px;
+$border_radius_type_5: 3px 3px 3px 3px;
+$border_radius_type_6: 4px 4px 4px 4px;
+$border_radius_type_7: 8px 8px 8px 8px;
+
+$font_type_0: 300 8px/1.5 "Poppins", Helvetica, Arial, serif;
+$font_type_1: 300 24px/1.16 "Poppins", Helvetica, Arial, serif;
+$font_type_2: italic 300 20px/1.1 "Poppins", Helvetica, Arial, serif;
+$font_type_3: 500 16px/1.5 "Poppins", Helvetica, Arial, serif;
+$font_type_4: 400 16px/1.37 "Poppins", Helvetica, Arial, serif;
+$font_type_5: 700 16px/1.37 "Poppins", Helvetica, Arial, serif;
+$font_type_6: 300 16px/1.37 "Poppins", Helvetica, Arial, serif;
+$font_type_7: 300 14px/1.57 "Poppins", Helvetica, Arial, serif;
+$font_type_8: 700 14px/1.57 "Poppins", Helvetica, Arial, serif;
+$font_type_9: 400 14px/1.42 "Poppins", Helvetica, Arial, serif;
+$font_type_10: 300 14px/0.85 "Poppins", Helvetica, Arial, serif;
+$font_type_11: 300 12px/2 "Poppins", Helvetica, Arial, serif;
+$font_type_12: italic 500 12px/2 "Poppins", Helvetica, Arial, serif;
+$font_type_13: 400 12px/1.66 "Poppins", Helvetica, Arial, serif;
+$font_type_14: 300 12px/1 "Poppins", Helvetica, Arial, serif;
+$font_type_15: 400 10px/1.6 "Poppins", Helvetica, Arial, serif;
+$font_type_16: 300 10px/1.4 "Poppins", Helvetica, Arial, serif;
+$font_type_17: 300 10px/1.2 "Poppins", Helvetica, Arial, serif;
+$font_type_18: 500 10px/1.2 "Poppins", Helvetica, Arial, serif;
+
+.section2 {
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  min-height: 1319px;
+}
+.flexCol {
+  @include flex-column;
+  width: 1033px;
+  height: 978px;
+  position: relative;
+  min-width: 1033px;
+  margin: 19px 18px 0px auto;
+}
+.content_box1 {
+  @include flex-column;
+  background-color: $color_type_7;
+  border-radius: $border_radius_type_6;
+  outline: 1px solid rgb(80, 80, 131);
+  outline-offset: -1px;
+  width: 33.88%;
+  position: relative;
+  margin: 0px 0% 0px 66.12%;
+}
+.line {
+  background-color: $color_type_6;
+  height: 1px;
+  position: relative;
+  margin: 337px 27px 273px 11px;
+}
+.flexCol__cell {
+  margin-top: -603px;
+  @include flex-column;
+  position: relative;
+}
+.group {
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+}
+.content_box {
+  @include flex-column;
+  border-radius: $border_radius_type_4;
+  outline: 1px solid rgb(80, 80, 131);
+  outline-offset: -1px;
+  width: 665px;
+  height: 565px;
+  position: absolute;
+  top: -51px;
+  left: 0px;
+}
+.content_box2 {
+  border-radius: $border_radius_type_4;
+  outline: 1px solid rgb(80, 80, 131);
+  outline-offset: -1px;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1.18;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+}
+.wrapper2 {
+  @include v-center-content;
+  width: 52.18%;
+  position: relative;
+  flex-grow: 1;
+  margin: 530px auto 5px;
+}
+.wrapper2__cell {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 41px;
+}
+.image2 {
+  width: 41px;
+  height: auto;
+  aspect-ratio: 1.37;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 41px;
+}
+.wrapper2__spacer {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 118px;
+}
+.text2 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_9;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 28px;
+  margin: 5px 0px;
+}
+.wrapper3 {
+  @include flex-column;
+  position: relative;
+  overflow: hidden;
+  flex: 0 1 41px;
+  min-height: 30px;
+}
+.rect3 {
+  background-color: $color_type_0;
+  border-radius: $border_radius_type_2;
+  width: 19px;
+  height: 2px;
+  position: relative;
+  min-width: 19px;
+  margin: 15px 0px 0px 8px;
+}
+.flexRow {
+  @include v-center-content;
+  column-gap: 16px;
+  position: relative;
+  flex-grow: 1;
+}
+.flexCol1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 667px;
+  margin: 522px 0px 0px;
+}
+.flexRow1 {
+  @include v-center-content;
+  position: relative;
+}
+.flexCol2 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 134px;
+}
+.medium_title {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_1;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 60.45%;
+  position: relative;
+  margin: 0px 39.55% 0px 0%;
+}
+.subtitle {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_2;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  margin: 2px 0px 0px;
+}
+.flexRow1__spacer {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 151px;
+}
+.flexRow2 {
+  @include v-center-content;
+  position: relative;
+  flex: 0 1 211px;
+  margin: 1px 0px 26px;
+}
+.flexRow2__cell {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 25px;
+}
+.icon4 {
+  width: 25px;
+  height: auto;
+  aspect-ratio: 1;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 25px;
+}
+.flexRow2__cell1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 0 36px;
+  min-width: 36px;
+}
+.text3 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_10;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  flex-grow: 1;
+  margin: 7px 0px 6px 6px;
+}
+.flexRow2__spacer {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 17px;
+}
+.wrapper {
+  @include flex-column;
+  background: var(--src) center center / cover no-repeat;
+  position: relative;
+  flex: 0 1 21px;
+  min-height: 11px;
+  margin: 7px 0px;
+}
+.icon2 {
+  width: 3px;
+  height: auto;
+  aspect-ratio: 1;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 3px;
+  margin: 4px 0px 0px 9px;
+}
+.flexRow2__cell2 {
+  @include flex-column;
+  position: relative;
+  flex: 0 0 37px;
+  min-width: 37px;
+}
+.text {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_7;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  flex-grow: 1;
+  margin: 2px 0px 1px 7px;
+}
+.flexRow2__spacer1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 22px;
+}
+.flexRow2__cell3 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 11px;
+}
+.image5 {
+  width: 11px;
+  height: auto;
+  aspect-ratio: 0.73;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 11px;
+  margin: 6px 0px 4px;
+}
+.flexRow2__spacer2 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 12px;
+}
+.text1 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_7;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 30px;
+  margin: 2px 0px 1px;
+}
+.flexCol3 {
+  @include flex-column;
+  position: relative;
+  margin: 12px 0px 0px 1px;
+}
+.text4 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_7;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 11.86%;
+  position: relative;
+  margin: 0px 87.99% 0px 0.15%;
+}
+.desc {
+  @include font-face($font_type_11, $color_type_4, 0px);
+  position: relative;
+  margin: 5px 0px 0px 1px;
+}
+.desc1 {
+  @include font-face($font_type_11, $color_type_4, 0px);
+  position: relative;
+  margin: 20px 0px 0px 1px;
+}
+.highlights3 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_4;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 43.99%;
+  position: relative;
+  margin: 0px 56.01% 0px 0%;
+}
+.highlights31 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_4;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 34.23%;
+  position: relative;
+  margin: 95px 65.77% 0px 0%;
+}
+.flexCol4 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 350px;
+  margin: 0px 0px 33px;
+}
+.flexCol5 {
+  @include flex-column;
+  position: relative;
+  margin: 0px 10px 0px 9px;
+}
+.flexRow3 {
+  @include v-center-content;
+  column-gap: 5px;
+  position: relative;
+}
+.flexRow4 {
+  @include v-center-content;
+  position: relative;
+  flex: 0 1 267px;
+}
+.flexCol6 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 36px;
+}
+.flexRow5 {
+  @include v-center-content;
+  position: relative;
+  margin: 0px 11px;
+}
+.flexRow5__cell {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 5px;
+}
+.image4 {
+  width: 5px;
+  height: auto;
+  aspect-ratio: 0.45;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 5px;
+}
+.flexRow5__cell1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 7px;
+}
+.image41 {
+  width: 5px;
+  height: auto;
+  aspect-ratio: 0.45;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 5px;
+  margin: 0px 0px 0px 2px;
+}
+.info2 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_0;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  margin: 1px 0px 0px;
+}
+.flexRow4__spacer {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 176px;
+}
+.info3 {
+  @include font-face($font_type_17, $color_type_4, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 55px;
+  margin: 2px 0px 10px;
+}
+.info4 {
+  @include font-face($font_type_18, $color_type_4, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 42px;
+  margin: 2px 0px 10px;
+}
+.wrapper4 {
+  @include flex-column;
+  background: var(--src) center center / cover no-repeat;
+  position: relative;
+  overflow: hidden;
+  flex: 0 1 12px;
+  min-height: 12px;
+  margin: 2px 0px 10px;
+}
+.flexCol7 {
+  @include flex-column;
+  width: 51.36%;
+  position: relative;
+  margin: 10px 48.34% 0px 0.3%;
+}
+.flexCol8 {
+  @include flex-column;
+  position: relative;
+  margin: 0px 8px 0px 0px;
+}
+.text11 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_8;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+}
+.info {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_14;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 17.9%;
+  position: relative;
+  margin: 5px 79.01% 0px 3.09%;
+}
+.text12 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_8;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  margin: 29px 0px 0px;
+}
+.flexCol9 {
+  @include flex-column;
+  width: 61.18%;
+  position: relative;
+  margin: 25px 38.82% 0px 0%;
+}
+.info1 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_16;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 36.54%;
+  position: relative;
+  margin: 5px 58.65% 0px 4.81%;
+}
+.info11 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_16;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 51.92%;
+  position: relative;
+  margin: 15px 43.27% 0px 4.81%;
+}
+.text13 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_8;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 56.47%;
+  position: relative;
+  margin: 26px 43.53% 0px 0%;
+}
+.flexCol10 {
+  @include flex-column;
+  position: relative;
+  margin: 70px 15px 0px 10px;
+}
+.flexCol11 {
+  @include flex-column;
+  width: 62.15%;
+  position: relative;
+  margin: 0px 37.85% 0px 0%;
+}
+.highlights2 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_5;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  margin: 0px 16px 0px 0px;
+}
+.highlights21 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_5;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  margin: 108px 0px 0px;
+}
+.flexRow6 {
+  @include v-center-content;
+  position: relative;
+  margin: 41px 0px 0px;
+}
+.flexCol12 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 78px;
+  margin: 0px 0px 1px;
+}
+.highlights1 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_6;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  margin: 0px 4px 0px 0px;
+}
+.content_box3 {
+  @include flex-column;
+  background-color: $color_type_8;
+  border-radius: $border_radius_type_5;
+  outline: 1px solid rgb(80, 80, 131);
+  outline-offset: -0.5px;
+  position: relative;
+  margin: 3px 0px 0px;
+}
+.flexRow7 {
+  @include v-center-content;
+  position: relative;
+  flex-grow: 1;
+  margin: 3px 0px 2px;
+}
+.flexRow7__cell {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 15px;
+}
+.icon5 {
+  width: 15px;
+  height: auto;
+  aspect-ratio: 1;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 15px;
+}
+.info31 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_17;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 30px;
+  margin: 1px 0px 2px;
+}
+.flexRow6__spacer {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 143px;
+}
+.flexRow6__cell {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 18px;
+}
+.icon1 {
+  width: 18px;
+  height: auto;
+  aspect-ratio: 1;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 18px;
+  margin: 26px 0px 2px;
+}
+.flexRow6__spacer1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 5px;
+}
+.highlights11 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_6;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 81px;
+  margin: 24px 0px 0px;
+}
+.flexCol13 {
+  @include flex-column;
+  width: 31.14%;
+  position: relative;
+  margin: 32px 68.86% 0px 0%;
+}
+.highlights12 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_6;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+}
+.highlights13 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_6;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  margin: 61px 21px 0px 0px;
+}
+.flexCol14 {
+  @include flex-column;
+  position: relative;
+  margin: 12px 0px 0px;
+}
+.wrapper5 {
+  @include flex-column;
+  background-color: $color_type_5;
+  border-radius: $border_radius_type_1;
+  outline: 1px solid rgb(80, 80, 131);
+  outline-offset: -1px;
+  position: relative;
+}
+.flexCol15 {
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  margin: 8px 17px 20px 11px;
+}
+.flexCol16 {
+  @include flex-column;
+  position: relative;
+  margin: 0px 12px 0px 2px;
+}
+.info6 {
+  font: $font_type_12;
+  color: $color_type_3;
+  text-decoration: underline;
+  letter-spacing: 0px;
+  position: relative;
+}
+.info5 {
+  @include font-face($font_type_15, $color_type_2, 0px);
+  position: relative;
+}
+.flexRow8 {
+  @include v-center-content;
+  column-gap: 11px;
+  position: relative;
+  margin: 8px 0px 0px;
+}
+.flexRow8__cell {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 92px;
+}
+.image6 {
+  border-radius: $border_radius_type_0;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 0.68;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+}
+.flexCol17 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 219px;
+  margin: 0px 0px 4px;
+}
+.wrapper9 {
+  @include flex-column;
+  position: relative;
+  margin: 0px 2px 0px 0px;
+}
+.highlights6 {
+  @include v-center-content;
+  @include font-face($font_type_3, $color_type_4, 0px);
+  position: relative;
+}
+.wrapper6 {
+  @include flex-column;
+  position: relative;
+  margin: 8px 0px 0px;
+}
+.wrapper7 {
+  @include v-center-content;
+  position: relative;
+}
+.info7 {
+  @include font-face($font_type_13, $color_type_2, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 83px;
+}
+.wrapper7__cell {
+  margin-left: -3px;
+  @include flex-column;
+  position: relative;
+  flex: 0 0 7px;
+  min-width: 7px;
+}
+.info8 {
+  @include font-face($font_type_13, $color_type_3, 0px);
+  position: relative;
+  flex-grow: 1;
+}
+.wrapper8 {
+  @include v-center-content;
+  position: relative;
+  margin: 4px 0px 0px;
+}
+.info71 {
+  @include font-face($font_type_13, $color_type_2, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 65px;
+}
+.wrapper8__cell {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 27px;
+}
+.icon6 {
+  border-radius: $border_radius_type_3;
+  width: 19px;
+  height: auto;
+  aspect-ratio: 1;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 19px;
+  margin: 1px 0px 0px 8px;
+}
+.wrapper71 {
+  @include v-center-content;
+  position: relative;
+  margin: 4px 0px 0px;
+}
+.info72 {
+  @include font-face($font_type_13, $color_type_2, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 78px;
+}
+.wrapper71__cell {
+  @include flex-column;
+  position: relative;
+  flex: 0 0 141px;
+  min-width: 141px;
+}
+.info81 {
+  @include font-face($font_type_13, $color_type_3, 0px);
+  position: relative;
+  flex-grow: 1;
+  margin: 0px 0px 0px 4px;
+}
+.flexCol14__cell {
+  margin-top: -204px;
+  @include flex-column;
+  position: relative;
+}
+.wrapper10 {
+  @include flex-column;
+  background-color: $color_type_1;
+  border-radius: $border_radius_type_7;
+  width: 30%;
+  position: relative;
+  flex-grow: 1;
+  margin: 0px 2.29% 0px 67.71%;
+}
+.highlights61 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  flex-grow: 1;
+  margin: 7px 5px 9px;
+}
