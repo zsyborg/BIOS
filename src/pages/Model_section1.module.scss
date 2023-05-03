@@ -1,0 +1,18 @@
+@use "utils" as *;
+
+$color_type_0: rgb(255, 255, 255);
+
+$font_type_0: 400 18px/0.66 "Poppins", Helvetica, Arial, serif;
+
+.section1 {
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  min-height: 39px;
+}
+.highlights {
+  @include font-face($font_type_0, $color_type_0, 0px);
+  position: relative;
+  flex-grow: 1;
+  margin: 27px 155px 0px 725px;
+}

@@ -1,0 +1,13 @@
+// @use "utils" as *;
+
+$padding_type_0: undefinedpx undefinedpx undefinedpx undefinedpx;
+
+.main {
+  @include flex-column;
+  padding: $padding_type_0;
+  position: relative;
+}
+.main__cell {
+  @include flex-column;
+  position: relative;
+}
