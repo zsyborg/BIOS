@@ -6,9 +6,60 @@ import Institute from '../media/Institute.png';
 
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+const axios = require('axios');
+import Snackbar, { SnackbarOrigin } from '@mui/material/Snackbar';
+export interface State extends SnackbarOrigin {
+  open: boolean;
+}
+
+
 function Signup() {
   // const [anchorElNav, setAnchorElNav] = React.useState(null);
   // const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+
+
+  const onChangeHandler = (event) => {
+    const { name, value } = event.currentTarget;
+  
+    if (name === 'userEmail') {
+      setEmail(value);
+    } else if (name === 'userPassword') {
+      setPassword(value);
+    }
+  };
+  
+
+  const signUp = (event, name, email, password, repassword, newState: SnackbarOrigin) => {
+    let data = JSON.stringify({
+      "first_name": name,
+      "last_name": name,
+      "company": "",
+      "position": "",
+      "email": email,
+      "password": password
+    });
+
+    let config = {
+      method: 'post',
+      maxBodyLength: Infinity,
+      url: 'https://development.biosapplication.com/api/v1/auth/register',
+      headers: { 
+        'Content-Type': 'application/json'
+      },
+      data : data
+    };
+
+    axios.request(config)
+    .then((response) => {
+      console.log(JSON.stringify(response.data));
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+
+  }
+
 
   return (
     <div>
@@ -26,22 +77,22 @@ function Signup() {
       {/* <Button variant="contained">Hello World</Button> */}
 
           </div>
-          <form className="mt-8 space-y-6" action="#" method="POST">
+          <form onSubmit={(event) => { signUp(event, email, password)}} className="mt-8 space-y-6" action="#" method="POST">
             <div>
             <div>
-      <TextField className='white w-full' id="email" variant="outlined" label="Enter your email" />
+      <TextField id="email" name="email" className='white w-full' id="email" variant="outlined" label="Enter your email" />
       </div>
             <div>
-      <TextField id="name" variant="outlined" className='white w-full' label="Enter your name" />
+      <TextField id="name" name="name" variant="outlined" className='white w-full' label="Enter your name" />
       </div>
             <div>
-      <TextField id="username" variant="outlined" className='white w-full' label="Enter username" />
+      <TextField id="username" name="username" variant="outlined" className='white w-full' label="Enter username" />
       </div>
             <div>
-      <TextField id="password" variant="outlined" className='white w-full' label="Enter password" />
+      <TextField id="password" name='password' variant="outlined" className='white w-full' label="Enter password" />
       </div>
             <div>
-      <TextField id="repassword" variant="outlined" className='white w-full' label="Repeat password" />
+      <TextField id="repassword" name='repassword' variant="outlined" className='white w-full' label="Repeat password" />
       </div>
       <div className="flex items-center justify-between">
               <div className="flex items-center">

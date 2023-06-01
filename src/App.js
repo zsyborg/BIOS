@@ -15,8 +15,8 @@ import Profile from './components/Profile';
 import SignIn from './components/SignIn';
 import ForgotPassword from './components/ForgotPassword';
 import Footer from './components/footer';
-import Form3d from './components/upload-3dfile';
-import ScienticForm from './components/form-scientic-info';
+// import Form3d from './components/upload-3dfile';
+// import ScienticForm from './components/form-scientic-info';
 import ProductCard from './components/ProductCard';
 import selectType from './components/selectType';
 import Shopy from './pages/shop';
@@ -24,6 +24,8 @@ import Prof from './pages/profile';
 import Home from './pages/home';
 import Model from './pages/model';
 function App() {
+  
+
   const darkTheme = createTheme({
     palette: {
       mode: 'dark',
@@ -38,14 +40,14 @@ function App() {
       </header>
      
       <div className="">
-        <Home/>
+        <SignIn/>
         <div className='w-full h-1 border-2 my-16 border-blue-500'>
 
         </div>
-        <About />
+        {/* <About /> */}
 
         <Signup />
-        <SignIn />
+        {/* <SignIn /> */}
         <ForgotPassword />
   
       </div>

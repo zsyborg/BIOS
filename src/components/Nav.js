@@ -93,7 +93,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <BrowserRouter>
+          
       <Routes>
         {/* <Route path="/" element={<Layout />}> */}
           {/* <Route index element={<Layout />} /> */}
@@ -102,7 +102,7 @@ function ResponsiveAppBar() {
           {/* <Route path="*" element={<NoPage />} /> */}
         
       </Routes>
-    </BrowserRouter>
+    
           
           
          {/* <img sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} src={logo} className={logostyle} alt="logo" style={{width:"50px"}} /> */}
